@@ -1,10 +1,11 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
+import moment from "moment";
 
 const Clock = () => {
   return (
     <View>
-      <Text style={styles.text}>10:54 AM</Text>
+      <Text style={styles.text}>{moment().format("LT")}</Text>
     </View>
   );
 };
